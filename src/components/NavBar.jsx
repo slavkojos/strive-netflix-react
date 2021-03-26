@@ -1,6 +1,5 @@
-import { Nav, Navbar, Button, Image, NavDropdown } from "react-bootstrap";
 import { CgSearch } from "react-icons/cg";
-import { FaBell, FaUser } from "react-icons/fa";
+import { FaBell } from "react-icons/fa";
 const NavBar = (props) => (
   <nav className="navbar navbar-expand-lg my-3 mx-3 d-flex justify-content-between">
     <div className="left">
@@ -10,6 +9,7 @@ const NavBar = (props) => (
             id="logo"
             className="mr-3"
             src="https://logos-download.com/wp-content/uploads/2016/03/Netflix_logo.png"
+            alt="logo"
           />
           <button
             className="navbar-toggler"
@@ -24,27 +24,27 @@ const NavBar = (props) => (
           </button>
         </li>
         <li className="nav-item active">
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="http://www.google.com">
             Home <span className="sr-only">(current)</span>
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="http://www.google.com">
             TV Shows
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="http://www.google.com">
             Movies
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="http://www.google.com">
             Recently Added
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="backoffice.html">
+          <a className="nav-link" href="http://www.google.comackoffice.html">
             My List
           </a>
         </li>
@@ -56,7 +56,7 @@ const NavBar = (props) => (
           <CgSearch className="mt-2"/>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="http://www.google.com">
             KIDS
           </a>
         </li>
@@ -64,7 +64,7 @@ const NavBar = (props) => (
           <FaBell className="mt-2"/>
         </li>
         <li className="nav-item">
-          <a href="profile.html">
+          <a href="http://www.google.comrofile.html">
             <img
               id="profile-icon"
               className="mt-1 ml-3"
