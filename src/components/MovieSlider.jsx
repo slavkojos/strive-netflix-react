@@ -39,8 +39,8 @@ class MovieSlider extends React.Component {
     render() {
         return (
             <>
-                <h5 className="ml-5">{this.props.name}</h5>      
-                <div id="slider" className="container row ml-3">
+                <h5 className="ml-5 mt-2">{this.props.name}</h5>      
+                <div id="slider" className="container row ml-3 pt-0">
                     {this.state.movies.map(mov => (
                         <div className="item-container">
                         <img
