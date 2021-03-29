@@ -9,9 +9,11 @@ function App() {
   <div className="App">
     <NavBar/>
     <GenreNav/>
-    <MovieSlider search="harry%20potter" name="Harry Potter"/>
-    <MovieSlider search="lord%20of%20the%20rings" name="Lord of the Rings"/>
-    <MovieSlider search="james%20bond" name="James Bond"/>
+    <MovieSlider name="John Wick"/>
+    <MovieSlider name="Harry Potter"/>
+    <MovieSlider name="Lord of the Rings"/>
+    <MovieSlider name="James Bond"/>
+    <MovieSlider name="Fast and Furious"/>
   </div>
   )
 }

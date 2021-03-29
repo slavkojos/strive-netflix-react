@@ -8,11 +8,12 @@ class MovieSlider extends React.Component {
     state = {
         isLoading : false,
         isError : false,
-        movies : []
+        movies : [],
+        numberResults: 7
     }
     componentDidMount = async () => {
         try {
-            let response = await fetch(`http://www.omdbapi.com/?apikey=faa5255f&s=harry%20potter`)
+            let response = await fetch(`http://www.omdbapi.com/?apikey=faa5255f&s=` + this.props.name)
             console.log(response)
             if (response.ok) {
                 let data = await response.json()
@@ -41,7 +42,7 @@ class MovieSlider extends React.Component {
             <>
                 <h5 className="ml-5 mt-2">{this.props.name}</h5>      
                 <div id="slider" className="container row ml-3 pt-0">
-                    {this.state.movies.map(mov => (
+                    {this.state.movies.slice(0, this.state.numberResults).map(mov => (
                         <div className="item-container">
                         <img
                           className="item"
