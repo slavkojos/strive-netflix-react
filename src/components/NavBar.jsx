@@ -24,7 +24,7 @@ const NavBar = (props) => (
           </button>
         </li>
         <li className="nav-item active">
-          <a className="nav-link" href="http://www.google.com">
+          <a className="nav-link" href="/">
             Home <span className="sr-only">(current)</span>
           </a>
         </li>
@@ -46,6 +46,11 @@ const NavBar = (props) => (
         <li className="nav-item">
           <a className="nav-link" href="http://www.google.comackoffice.html">
             My List
+          </a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="/register">
+            Register
           </a>
         </li>
       </ul>

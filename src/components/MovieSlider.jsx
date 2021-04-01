@@ -51,7 +51,13 @@ class MovieSlider extends React.Component {
         <div id="slider" className="container row ml-3 pt-0">
           {this.state.movies.slice(0, this.state.numberResults).map((mov) => (
             <div className="item-container">
-              <img className="item" src={mov.Poster} />
+              <img 
+              className="item" 
+              src={mov.Poster}
+              onClick={() => this.setState({
+                selectedMovie: mov
+            })}
+              />
             </div>
           ))}
         </div>
